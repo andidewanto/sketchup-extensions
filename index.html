@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Andi Dewanto — SketchUp Extensions Support</title>
-<meta name="description" content="Support, downloads and tutorials for Simple Bevel and MapEasy, SketchUp extensions by Andi Dewanto.">
+<meta name="description" content="Support, downloads and tutorials for Simple Bevel and MapEasy, SketchUp extensions by Andi Dewanto. Dukungan, unduhan, dan tutorial dalam bahasa Inggris dan Indonesia.">
 <style>
   :root { --ink:#1d2725; --muted:#5b6866; --teal:#005446; --orange:#E07A1F; --bg:#ffffff; --panel:#f3f7f6; --line:#d9e3e1; }
   @media (prefers-color-scheme: dark) {
@@ -30,46 +30,89 @@
   li { margin: 3px 0; }
   .contact { border-left: 4px solid var(--orange); padding: 12px 16px; background: var(--panel); border-radius: 8px; }
   footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+  html[data-lang="en"] .id, html[data-lang="id"] .en { display: none !important; }
+  .langbar { display: flex; justify-content: flex-end; gap: 4px; margin: 0 0 12px; }
+  .langbar button { font: 600 13px -apple-system, "Segoe UI", sans-serif; padding: 4px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+  .langbar button[aria-pressed="true"] { background: var(--teal); border-color: var(--teal); color: #fff; }
 </style>
+<script>
+  // Bahasa: ?lang=en|id → pilihan terakhir → bahasa browser (id → Indonesia, lainnya Inggris).
+  (function () {
+    var d = document.documentElement, q = (location.search.match(/lang=(en|id)/) || [])[1], s = null;
+    try { s = localStorage.getItem('ad_lang'); } catch (e) {}
+    d.dataset.lang = q || s || ((navigator.language || '').toLowerCase().indexOf('id') === 0 ? 'id' : 'en');
+    d.lang = d.dataset.lang;
+  })();
+</script>
 </head>
 <body>
 <main>
-  <h1>SketchUp Extensions by Andi Dewanto</h1>
-  <p class="lead">Support, downloads and tutorials for <b>Simple Bevel</b> and <b>MapEasy</b>. Free · Windows &amp; macOS · SketchUp 2021+.</p>
+  <nav class="langbar" aria-label="Language"><button data-l="en">EN</button><button data-l="id">ID</button></nav>
+  <h1><span class="en">SketchUp Extensions by Andi Dewanto</span><span class="id">Extension SketchUp oleh Andi Dewanto</span></h1>
+  <p class="lead en">Support, downloads and tutorials for <b>Simple Bevel</b> and <b>MapEasy</b>. Free · Windows &amp; macOS · SketchUp 2021+.</p>
+  <p class="lead id">Dukungan, unduhan, dan tutorial untuk <b>Simple Bevel</b> dan <b>MapEasy</b>. Gratis · Windows &amp; macOS · SketchUp 2021+.</p>
 
   <section class="card" id="simple-bevel">
-    <div class="head"><img src="images/simple-bevel-logo.png" alt="Simple Bevel logo"><div><h2>Simple Bevel</h2><div class="ver">Version 1.4.0</div></div></div>
-    <p>Round or chamfer selected edges in one step — positive radius = fillet, negative = chamfer. Outside and inside corners, chains of connected edges with mitre joints, a smart <i>Pick Edge Chain</i> selector, and <b>new in 1.4</b>: 2D corner fillet / chamfer for flat faces.</p>
+    <div class="head"><img src="images/simple-bevel-logo.png" alt="Simple Bevel logo"><div><h2>Simple Bevel</h2><div class="ver"><span class="en">Version</span><span class="id">Versi</span> 1.5.0</div></div></div>
+    <p class="en">Round or chamfer selected edges in one step — positive radius = fillet, negative = chamfer. Outside and inside corners, chains of connected edges with mitre joints, a smart <i>Pick Edge Chain</i> selector, and 2D corner fillet / chamfer for flat faces. <b>New in 1.5:</b> English interface.</p>
+    <p class="id">Membulatkan atau memotong miring edge terpilih dalam satu langkah — radius positif = fillet, negatif = chamfer. Sudut luar dan dalam, rantai edge bersambung dengan sambungan mitre, alat <i>Pick Edge Chain</i>, dan fillet / chamfer pojok 2D untuk face datar. <b>Baru di 1.5:</b> antarmuka berbahasa Inggris.</p>
     <div class="shots"><img src="images/simple-bevel-1-overview.png" alt="Simple Bevel examples"><img src="images/simple-bevel-2-before-after.png" alt="Before and after bevel"></div>
-    <div class="btns"><a class="btn primary" href="downloads/ad_simple_bevel-1.4.0.rbz">Download .rbz</a><a class="btn" href="tutorials/simple-bevel.html">Tutorial</a></div>
+    <div class="btns"><a class="btn primary" href="downloads/ad_simple_bevel-1.5.0.rbz">Download .rbz</a><a class="btn" href="tutorials/simple-bevel.html">Tutorial</a></div>
   </section>
 
   <section class="card" id="mapeasy">
-    <div class="head"><img src="images/mapeasy-logo.png" alt="MapEasy logo"><div><h2>MapEasy</h2><div class="ver">Version 1.0.3</div></div></div>
-    <p>Fast texture mapping: <b>Cylinder Wrap</b> wraps an image around any cylinder (axis detected automatically); <b>Face Fill</b> fits an image to selected faces — Stretch, Cover or Contain, per face or spanned across folds and corners.</p>
+    <div class="head"><img src="images/mapeasy-logo.png" alt="MapEasy logo"><div><h2>MapEasy</h2><div class="ver"><span class="en">Version</span><span class="id">Versi</span> 1.1.0</div></div></div>
+    <p class="en">Fast texture mapping: <b>Cylinder Wrap</b> wraps an image around any cylinder (axis detected automatically); <b>Face Fill</b> fits an image to selected faces — Stretch, Cover or Contain, per face or spanned across folds and corners. <b>New in 1.1:</b> English interface.</p>
+    <p class="id">Pemetaan tekstur cepat: <b>Cylinder Wrap</b> membungkus gambar ke silinder apa pun (sumbu terdeteksi otomatis); <b>Face Fill</b> memasang gambar pas ke face terpilih — Stretch, Cover, atau Contain, per face atau dibentang melewati lipatan dan sudut. <b>Baru di 1.1:</b> antarmuka berbahasa Inggris.</p>
     <div class="shots"><img src="images/mapeasy-1-cylinder-wrap.png" alt="Cylinder Wrap"><img src="images/mapeasy-2-face-fill-modes.png" alt="Face Fill modes"><img src="images/mapeasy-3-span-folds.png" alt="Spanned across folds"></div>
-    <div class="btns"><a class="btn primary" href="downloads/ad_mapeasy-1.0.3.rbz">Download .rbz</a><a class="btn" href="tutorials/mapeasy.html">Tutorial</a></div>
+    <div class="btns"><a class="btn primary" href="downloads/ad_mapeasy-1.1.0.rbz">Download .rbz</a><a class="btn" href="tutorials/mapeasy.html">Tutorial</a></div>
   </section>
 
-  <h3>Installation</h3>
-  <ol>
+  <h3><span class="en">Installation</span><span class="id">Instalasi</span></h3>
+  <ol class="en">
     <li>SketchUp: <b>Extensions › Extension Manager › Install Extension…</b> and choose the <code>.rbz</code>.</li>
     <li>The toolbar appears automatically (otherwise <b>View › Toolbars</b>).</li>
-    <li>Each extension has a built-in tutorial: <b>Extensions › [name] › Tentang… (About)</b> › <b>Buka Tutorial</b>.</li>
+    <li>Each extension has a built-in tutorial: <b>Extensions › [name] › About…</b> › <b>Open Tutorial</b>.</li>
+  </ol>
+  <ol class="id">
+    <li>Di SketchUp: <b>Extensions › Extension Manager › Install Extension…</b> lalu pilih file <code>.rbz</code>.</li>
+    <li>Toolbar muncul otomatis (jika tidak: <b>View › Toolbars</b>).</li>
+    <li>Tiap extension punya tutorial bawaan: <b>Extensions › [nama] › About…</b> › <b>Open Tutorial</b>. Tutorial tersedia dalam bahasa Inggris dan Indonesia (tombol EN / ID).</li>
   </ol>
 
   <h3>FAQ</h3>
-  <ul>
+  <ul class="en">
     <li><b>An edge was skipped.</b> The message names the reason — usually the radius is larger than the adjacent face, or several selected edges meet at one corner.</li>
     <li><b>The image is on the wrong side of a face.</b> Right-click › Reverse Faces, then run Face Fill again.</li>
-    <li><b>Interface language.</b> The interface is currently Indonesian; an English interface is planned.</li>
+    <li><b>Interface language.</b> The extensions use an English interface; the tutorials and this page are available in English and Indonesian.</li>
     <li><b>Uninstall.</b> Extension Manager › select the extension › Uninstall.</li>
   </ul>
+  <ul class="id">
+    <li><b>Ada edge yang dilewati.</b> Pesannya menyebut alasannya — biasanya radius lebih besar dari face di sebelahnya, atau beberapa edge terpilih bertemu di satu pojok.</li>
+    <li><b>Gambar menempel di sisi face yang salah.</b> Klik kanan › Reverse Faces, lalu jalankan Face Fill lagi.</li>
+    <li><b>Bahasa antarmuka.</b> Menu dan dialog extension memakai bahasa Inggris; tutorial dan halaman ini tersedia dalam bahasa Inggris dan Indonesia.</li>
+    <li><b>Uninstall.</b> Extension Manager › pilih extension › Uninstall.</li>
+  </ul>
 
-  <h3>Contact &amp; bug reports</h3>
-  <div class="contact">Email <a href="mailto:andidewanto@gmail.com">andidewanto@gmail.com</a> — please include your SketchUp version, operating system, the extension version and, if possible, a small .skp that shows the problem.</div>
+  <h3><span class="en">Contact &amp; bug reports</span><span class="id">Kontak &amp; laporan bug</span></h3>
+  <div class="contact en">Email <a href="mailto:andidewanto@gmail.com">andidewanto@gmail.com</a> — please include your SketchUp version, operating system, the extension version and, if possible, a small .skp that shows the problem.</div>
+  <div class="contact id">Email <a href="mailto:andidewanto@gmail.com">andidewanto@gmail.com</a> — sertakan versi SketchUp, sistem operasi, versi extension, dan bila bisa file .skp kecil yang menunjukkan masalahnya.</div>
 
-  <footer>© 2026 Andi Dewanto · Simple Bevel &amp; MapEasy are independent extensions and are not affiliated with Trimble or SketchUp.</footer>
+  <footer><span class="en">© 2026 Andi Dewanto · Simple Bevel &amp; MapEasy are independent extensions and are not affiliated with Trimble or SketchUp.</span><span class="id">© 2026 Andi Dewanto · Simple Bevel &amp; MapEasy adalah extension independen dan tidak berafiliasi dengan Trimble atau SketchUp.</span></footer>
 </main>
+<script>
+  (function () {
+    var d = document.documentElement;
+    function sync() { document.querySelectorAll('.langbar button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.l === d.dataset.lang)); }); }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('.langbar button');
+      if (!b) return;
+      d.dataset.lang = d.lang = b.dataset.l;
+      try { localStorage.setItem('ad_lang', b.dataset.l); } catch (err) {}
+      sync();
+    });
+    sync();
+  })();
+</script>
 </body>
 </html>
