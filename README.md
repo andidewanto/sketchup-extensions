@@ -6,11 +6,11 @@ Support page, downloads and tutorials for **Simple Bevel**, **MapEasy** and **Zo
 
 | Extension | Version | What it does |
 |---|---|---|
-| Simple Bevel | 1.5.0 | Round (fillet) or chamfer edges, edge chains with mitre joints, and 2D corners of flat faces |
-| MapEasy | 1.1.0 | Cylinder Wrap (image around a cylinder) and Face Fill (image fitted to faces) |
-| Zone Stretch | 1.4.0 | Stretch or shrink only the part of an object between two limit planes; works inside nested groups and components |
+| [Simple Bevel](https://andidewanto.github.io/simple-bevel/) ([repo](https://github.com/andidewanto/simple-bevel)) | 1.5.0 | Round (fillet) or chamfer edges, edge chains with mitre joints, and 2D corners of flat faces |
+| [MapEasy](https://andidewanto.github.io/mapeasy/) ([repo](https://github.com/andidewanto/mapeasy)) | 1.1.0 | Cylinder Wrap (image around a cylinder) and Face Fill (image fitted to faces) |
+| [Zone Stretch](https://andidewanto.github.io/zone-stretch/) ([repo](https://github.com/andidewanto/zone-stretch)) | 1.4.0 | Stretch or shrink only the part of an object between two limit planes; works inside nested groups and components |
 
-- Live page: https://andidewanto.github.io/sketchup-extensions/
+- Live page: https://andidewanto.github.io/sketchup-extensions/ (overview) — each extension also has its own site and repository, linked in the table.
 - Install: SketchUp › **Extensions › Extension Manager › Install Extension…** › choose the `.rbz` from `downloads/`.
 - Tutorials: `tutorials/` (English and Indonesian, switch with the EN / ID buttons). Zone Stretch how-to video: `videos/zone-stretch-how-to.mp4`.
 - Interface language of the extensions: English.
@@ -25,11 +25,11 @@ Halaman dukungan, unduhan, dan tutorial untuk **Simple Bevel**, **MapEasy** dan 
 
 | Extension | Versi | Fungsi |
 |---|---|---|
-| Simple Bevel | 1.5.0 | Membulatkan (fillet) atau memotong miring (chamfer) edge, rantai edge dengan sambungan mitre, dan pojok 2D face datar |
-| MapEasy | 1.1.0 | Cylinder Wrap (gambar mengelilingi silinder) dan Face Fill (gambar pas ke face) |
-| Zone Stretch | 1.4.0 | Memanjangkan/memendekkan hanya bagian objek di antara dua bidang batas; bekerja di dalam grup dan komponen bersarang |
+| [Simple Bevel](https://andidewanto.github.io/simple-bevel/) ([repo](https://github.com/andidewanto/simple-bevel)) | 1.5.0 | Membulatkan (fillet) atau memotong miring (chamfer) edge, rantai edge dengan sambungan mitre, dan pojok 2D face datar |
+| [MapEasy](https://andidewanto.github.io/mapeasy/) ([repo](https://github.com/andidewanto/mapeasy)) | 1.1.0 | Cylinder Wrap (gambar mengelilingi silinder) dan Face Fill (gambar pas ke face) |
+| [Zone Stretch](https://andidewanto.github.io/zone-stretch/) ([repo](https://github.com/andidewanto/zone-stretch)) | 1.4.0 | Memanjangkan/memendekkan hanya bagian objek di antara dua bidang batas; bekerja di dalam grup dan komponen bersarang |
 
-- Halaman: https://andidewanto.github.io/sketchup-extensions/
+- Halaman: https://andidewanto.github.io/sketchup-extensions/ (ringkasan) — tiap extension juga punya situs dan repositori sendiri, lihat tautan di tabel.
 - Instalasi: SketchUp › **Extensions › Extension Manager › Install Extension…** › pilih file `.rbz` dari folder `downloads/`.
 - Tutorial: folder `tutorials/` (bahasa Inggris dan Indonesia, ganti lewat tombol EN / ID).
 - Bahasa antarmuka extension: Inggris.
