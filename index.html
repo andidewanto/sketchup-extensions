@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Andi Dewanto — SketchUp Extensions Support</title>
-<meta name="description" content="Support, downloads and tutorials for Simple Bevel and MapEasy, SketchUp extensions by Andi Dewanto. Dukungan, unduhan, dan tutorial dalam bahasa Inggris dan Indonesia.">
+<meta name="description" content="Support, downloads and tutorials for Simple Bevel, MapEasy and Zone Stretch, SketchUp extensions by Andi Dewanto. Dukungan, unduhan, dan tutorial dalam bahasa Inggris dan Indonesia.">
 <style>
   :root { --ink:#1d2725; --muted:#5b6866; --teal:#005446; --orange:#E07A1F; --bg:#ffffff; --panel:#f3f7f6; --line:#d9e3e1; }
   @media (prefers-color-scheme: dark) {
@@ -49,8 +49,8 @@
 <main>
   <nav class="langbar" aria-label="Language"><button data-l="en">EN</button><button data-l="id">ID</button></nav>
   <h1><span class="en">SketchUp Extensions by Andi Dewanto</span><span class="id">Extension SketchUp oleh Andi Dewanto</span></h1>
-  <p class="lead en">Support, downloads and tutorials for <b>Simple Bevel</b> and <b>MapEasy</b>. Free · Windows &amp; macOS · SketchUp 2021+.</p>
-  <p class="lead id">Dukungan, unduhan, dan tutorial untuk <b>Simple Bevel</b> dan <b>MapEasy</b>. Gratis · Windows &amp; macOS · SketchUp 2021+.</p>
+  <p class="lead en">Support, downloads and tutorials for <b>Simple Bevel</b>, <b>MapEasy</b> and <b>Zone Stretch</b>. Free · Windows &amp; macOS · SketchUp 2021+.</p>
+  <p class="lead id">Dukungan, unduhan, dan tutorial untuk <b>Simple Bevel</b>, <b>MapEasy</b> dan <b>Zone Stretch</b>. Gratis · Windows &amp; macOS · SketchUp 2021+.</p>
 
   <section class="card" id="simple-bevel">
     <div class="head"><img src="images/simple-bevel-logo.png" alt="Simple Bevel logo"><div><h2>Simple Bevel</h2><div class="ver"><span class="en">Version</span><span class="id">Versi</span> 1.5.0</div></div></div>
@@ -66,6 +66,15 @@
     <p class="id">Pemetaan tekstur cepat: <b>Cylinder Wrap</b> membungkus gambar ke silinder apa pun (sumbu terdeteksi otomatis); <b>Face Fill</b> memasang gambar pas ke face terpilih — Stretch, Cover, atau Contain, per face atau dibentang melewati lipatan dan sudut. <b>Baru di 1.1:</b> antarmuka berbahasa Inggris.</p>
     <div class="shots"><img src="images/mapeasy-1-cylinder-wrap.png" alt="Cylinder Wrap"><img src="images/mapeasy-2-face-fill-modes.png" alt="Face Fill modes"><img src="images/mapeasy-3-span-folds.png" alt="Spanned across folds"></div>
     <div class="btns"><a class="btn primary" href="downloads/ad_mapeasy-1.1.0.rbz">Download .rbz</a><a class="btn" href="tutorials/mapeasy.html">Tutorial</a></div>
+  </section>
+
+  <section class="card" id="zone-stretch">
+    <div class="head"><img src="images/zone-stretch-logo.png" alt="Zone Stretch logo"><div><h2>Zone Stretch</h2><div class="ver"><span class="en">Version</span><span class="id">Versi</span> 1.4.0 · <span class="en">new</span><span class="id">baru</span></div></div></div>
+    <p class="en">Make one part of a model longer or shorter — only between two limit planes — while everything outside keeps its exact shape. Pick a direction (red, green or blue plane), click limits A and B, then type the new length (<code>480</code>), a change (<code>+200</code>) or a shrink (<code>-100</code>). Works deep inside nested groups and components without exploding them; shared components stay shared.</p>
+    <p class="id">Memanjangkan atau memendekkan satu bagian model — hanya di antara dua bidang batas — sementara bagian lain tetap utuh. Pilih arah (bidang merah, hijau atau biru), klik batas A dan B, lalu ketik panjang baru (<code>480</code>), penambahan (<code>+200</code>) atau pengurangan (<code>-100</code>). Bekerja di dalam grup dan komponen bersarang tanpa explode; komponen bersama tetap berbagi definisi.</p>
+    <video src="videos/zone-stretch-how-to.mp4" poster="images/zone-stretch-video-poster.jpg" controls playsinline preload="metadata" style="width:100%;border-radius:8px;border:1px solid var(--line);background:#000;margin-top:6px"></video>
+    <div class="shots"><img src="images/zone-stretch-1-before-after.png" alt="Before and after: only the middle zone grew"><img src="images/zone-stretch-2-how-it-works.png" alt="Zone Stretch Tool steps"></div>
+    <div class="btns"><a class="btn primary" href="downloads/ad_zone_stretch-1.4.0.rbz">Download .rbz</a><a class="btn" href="tutorials/zone-stretch.html">Tutorial</a></div>
   </section>
 
   <h3><span class="en">Installation</span><span class="id">Instalasi</span></h3>
@@ -84,12 +93,14 @@
   <ul class="en">
     <li><b>An edge was skipped.</b> The message names the reason — usually the radius is larger than the adjacent face, or several selected edges meet at one corner.</li>
     <li><b>The image is on the wrong side of a face.</b> Right-click › Reverse Faces, then run Face Fill again.</li>
+    <li><b>Zone Stretch changed only part of my model.</b> Only the selected object stretches — group the parts (frame, header, shelves…) first to stretch them together.</li>
     <li><b>Interface language.</b> The extensions use an English interface; the tutorials and this page are available in English and Indonesian.</li>
     <li><b>Uninstall.</b> Extension Manager › select the extension › Uninstall.</li>
   </ul>
   <ul class="id">
     <li><b>Ada edge yang dilewati.</b> Pesannya menyebut alasannya — biasanya radius lebih besar dari face di sebelahnya, atau beberapa edge terpilih bertemu di satu pojok.</li>
     <li><b>Gambar menempel di sisi face yang salah.</b> Klik kanan › Reverse Faces, lalu jalankan Face Fill lagi.</li>
+    <li><b>Zone Stretch hanya mengubah sebagian model.</b> Hanya objek terpilih yang ditarik — gabungkan dulu bagian-bagiannya (rangka, header, rak…) dalam satu grup.</li>
     <li><b>Bahasa antarmuka.</b> Menu dan dialog extension memakai bahasa Inggris; tutorial dan halaman ini tersedia dalam bahasa Inggris dan Indonesia.</li>
     <li><b>Uninstall.</b> Extension Manager › pilih extension › Uninstall.</li>
   </ul>
@@ -98,7 +109,7 @@
   <div class="contact en">Email <a href="mailto:andidewanto@gmail.com">andidewanto@gmail.com</a> — please include your SketchUp version, operating system, the extension version and, if possible, a small .skp that shows the problem.</div>
   <div class="contact id">Email <a href="mailto:andidewanto@gmail.com">andidewanto@gmail.com</a> — sertakan versi SketchUp, sistem operasi, versi extension, dan bila bisa file .skp kecil yang menunjukkan masalahnya.</div>
 
-  <footer><span class="en">© 2026 Andi Dewanto · Simple Bevel &amp; MapEasy are independent extensions and are not affiliated with Trimble or SketchUp.</span><span class="id">© 2026 Andi Dewanto · Simple Bevel &amp; MapEasy adalah extension independen dan tidak berafiliasi dengan Trimble atau SketchUp.</span></footer>
+  <footer><span class="en">© 2026 Andi Dewanto · Simple Bevel, MapEasy &amp; Zone Stretch are independent extensions and are not affiliated with Trimble or SketchUp.</span><span class="id">© 2026 Andi Dewanto · Simple Bevel, MapEasy &amp; Zone Stretch adalah extension independen dan tidak berafiliasi dengan Trimble atau SketchUp.</span></footer>
 </main>
 <script>
   (function () {
