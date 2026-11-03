@@ -25,8 +25,8 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .window { background: var(--win); min-height: 100vh; }
-  .brand { display: block; width: 60px; height: 60px; margin: 0 0 10px; }
-  .brand img, .hero .brand img { width: 100%; height: 100%; display: block; }
+  .brand { display: block; width: 100%; margin: 0 0 14px; padding: 0 6px; }
+  .brand img, .hero .brand img { width: 100%; height: auto; display: block; }
   .titlebar { position: sticky; top: 0; z-index: 5; height: 48px; display: flex; align-items: center; gap: 12px; padding: 0 14px; background: color-mix(in srgb, var(--bar) 88%, transparent); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid var(--line); }
   .titlebar .title { flex: 1; text-align: center; font-weight: 600; font-size: 13px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .langbar { display: flex; flex: none; background: var(--sel); border-radius: 7px; padding: 2px; gap: 0; margin: 0; }
@@ -111,6 +111,7 @@
     .sidebar { border-right: 0; border-bottom: 1px solid var(--line); padding: 8px 10px; }
     .sidebar .inner { position: static; }
     .side-app { display: none; }
+    .brand { width: 72px; margin: 6px auto 10px; padding: 0; }
     .sidebar nav { display: flex; gap: 4px; overflow-x: auto; white-space: nowrap; }
     .side-sep { display: none; }
     .content { padding: 22px 16px 40px; }
@@ -133,6 +134,7 @@
   <header class="titlebar"><div class="title">SketchUp Extensions</div><nav class="langbar" aria-label="Language"><button data-l="en">EN</button><button data-l="id">ID</button></nav></header>
   <div class="split">
     <aside class="sidebar"><div class="inner">
+      <a class="brand" href="./" title="Andi Dewanto"><img src="images/brand-andidewanto.png" alt="Andi Dewanto logo"></a>
       <div class="side-app"><div><b>SketchUp Extensions</b><span>Andi Dewanto</span></div></div>
       <nav>
       <a href="#extensions" class="active"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="4.5" height="4.5" rx="1.2"/><rect x="9" y="2.5" width="4.5" height="4.5" rx="1.2"/><rect x="2.5" y="9" width="4.5" height="4.5" rx="1.2"/><rect x="9" y="9" width="4.5" height="4.5" rx="1.2"/></svg><span class="en">Extensions</span><span class="id">Extension</span></a>
@@ -147,7 +149,7 @@
     </div></aside>
     <main class="content">
       <section id="extensions">
-        <a class="brand" href="./" title="Andi Dewanto"><img src="images/brand-andidewanto.png" alt="Andi Dewanto logo"></a><h1><span class="en">SketchUp Extensions by Andi Dewanto</span><span class="id">Extension SketchUp oleh Andi Dewanto</span></h1>
+        <h1><span class="en">SketchUp Extensions by Andi Dewanto</span><span class="id">Extension SketchUp oleh Andi Dewanto</span></h1>
         <p class="sub"><span class="en">Free · Windows &amp; macOS · SketchUp 2021+. Each extension has its own page and repository.</span><span class="id">Gratis · Windows &amp; macOS · SketchUp 2021+. Tiap extension punya halaman dan repositori sendiri.</span></p>
         <div class="group" style="margin-top:18px">
         <div class="app" id="simple-bevel"><img src="images/simple-bevel-logo.png" alt="Simple Bevel icon"><div>
