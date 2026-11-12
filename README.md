@@ -21,7 +21,7 @@ Contact & bug reports: andidewanto@gmail.com
 
 ## Bahasa Indonesia
 
-Halaman dukungan, unduhan, dan tutorial untuk **Simple Bevel**, **MapEasy** dan **Zone Stretch** — extension SketchUp gratis (Windows & macOS, SketchUp 2021+).
+Halaman dukungan, unduhan, dan tutorial untuk **Simple Bevel**, **MapEasy** dan **Zone Stretch** · extension SketchUp gratis (Windows & macOS, SketchUp 2021+).
 
 | Extension | Versi | Fungsi |
 |---|---|---|
@@ -29,7 +29,7 @@ Halaman dukungan, unduhan, dan tutorial untuk **Simple Bevel**, **MapEasy** dan 
 | [MapEasy](https://andidewanto.github.io/mapeasy/) ([repo](https://github.com/andidewanto/mapeasy)) | 1.1.0 | Cylinder Wrap (gambar mengelilingi silinder) dan Face Fill (gambar pas ke face) |
 | [Zone Stretch](https://andidewanto.github.io/zone-stretch/) ([repo](https://github.com/andidewanto/zone-stretch)) | 1.4.0 | Memanjangkan/memendekkan hanya bagian objek di antara dua bidang batas; bekerja di dalam grup dan komponen bersarang |
 
-- Halaman: https://andidewanto.github.io/sketchup-extensions/ (ringkasan) — tiap extension juga punya situs dan repositori sendiri, lihat tautan di tabel.
+- Halaman: https://andidewanto.github.io/sketchup-extensions/ (ringkasan) · tiap extension juga punya situs dan repositori sendiri, lihat tautan di tabel.
 - Instalasi: SketchUp › **Extensions › Extension Manager › Install Extension…** › pilih file `.rbz` dari folder `downloads/`.
 - Tutorial: folder `tutorials/` (bahasa Inggris dan Indonesia, ganti lewat tombol EN / ID).
 - Bahasa antarmuka extension: Inggris.
